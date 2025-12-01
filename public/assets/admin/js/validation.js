@@ -14,38 +14,43 @@ $(document).ready(function(){
             email:{
                 required: true,
                 email: true,
-                maxlength: 100
+                maxlength: 100,
+                unique: true
             },
             password:{
                 required: true,
                 minlength: 8,
+                confirmed: true
             },
             password_confirmation:{
                 required: true,
+                minlength: 8,
                 equalTo: '#exampleInputPassword'
             }
         },
         messages:{
             first_name:{
-                required: "Please enter first name",
-                maxlength: "First name cannot exceed 50 characters"
+                required: "First name is required.",
+                maxlength: "First name may not be greater than 50 characters."
             },
             last_name:{
-                required: "Please enter last name",
-                maxlength: "Last name cannot exceed 50 characters"
+                required: "Last name is required.",
+                maxlength: "Last name may not be greater than 50 characters."
             },
             email:{
-                required: "Please enter email",
-                email: "Please enter valid email",
-                maxlength: "Email cannot exceed 100 characters"
+                required: "Email is required.",
+                email: "Please enter a valid email address.",
+                maxlength: "Email may not be greater than 100 characters.",
+                unique: "This email is already registered."
             },
             password:{
-                required: "Please enter password",
-                minlength: "Password must be at least 8 characters long"
+                required: "Password is required.",
+                minlength: "Password must be at least 8 characters long",
+                confirmed: "Password confirmation does not match"
             },
             password_confirmation:{
-                required: "Please enter repeat password",
-                equalTo: "Repeat password must match password"
+                required: "Password confirmation is required.",
+                equalTo: "Password confirmation must match the password.",
             }
         },
         errorClass: "text-danger"

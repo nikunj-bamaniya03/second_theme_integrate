@@ -71,7 +71,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user" name="password_confirmation" 
-                                           value="{{ old('password_confirmation') }}" id="exampleRepeatPassword" placeholder="Repeat Password">
+                                           value="{{ old('password_confirmation') }}" id="exampleRepeatPassword" placeholder="Confirm Password">
                                     @error('password_confirmation')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror

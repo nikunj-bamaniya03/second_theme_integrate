@@ -33,9 +33,14 @@ class StorePostRequest extends FormRequest
     {
         return [
             'first_name.required' => 'First name is required.',
+            'first_name.string'   => 'First name must be a string.',
+            'first_name.max'      => 'First name may not be greater than 50 characters.',
             'last_name.required'  => 'Last name is required.',
+            'last_name.string'    => 'Last name must be a string.',
+            'last_name.max'       => 'Last name may not be greater than 50 characters.',
             'email.required'      => 'Email is required.',
             'email.email'         => 'Please enter a valid email address.',
+            'email.max'           => 'Email may not be greater than 100 characters.',
             'email.unique'        => 'This email is already registered.',
             'password.required'   => 'Password is required.',
             'password.min'        => 'Password must be at least 8 characters long.',
