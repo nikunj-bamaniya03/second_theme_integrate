@@ -1,4 +1,4 @@
-@extends('layout.master_layout')
+@extends('admin.layout.master_layout')
 
 @if(session('success'))
     <div class="alert alert-success">
