@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StorePostRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Symfony\Component\HttpKernel\HttpCache\Store;
 
 class ManageAdminController extends Controller
 {
-    public function admin_register(Request $request)
+    public function admin_register(StorePostRequest $StorePostRequest)
     {
-        $request->validate([
+        $StorePostRequest->validate([
             'first_name' => 'required|string|max:50',
             'last_name'  => 'required|string|max:50',
             'email'      => 'required|string|email|max:100|unique:admin',
@@ -17,10 +19,10 @@ class ManageAdminController extends Controller
         ]);
 
             DB::table('admin')->insert([
-                'first_name' => $request->first_name,
-                'last_name'  => $request->last_name,
-                'email'      => $request->email,
-                'password'   => bcrypt($request->password),
+                'first_name' => $StorePostRequest->first_name,
+                'last_name'  => $StorePostRequest->last_name,
+                'email'      => $StorePostRequest->email,
+                'password'   => bcrypt($StorePostRequest->password),
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
