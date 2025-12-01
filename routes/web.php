@@ -20,10 +20,10 @@ Route::prefix('/admin')->group(function () {
         Route::view('/dashboard', 'dashboard')->name('dashboard');
         Route::view('/buttons', 'buttons')->name('buttons');
         Route::view('/cards', 'cards')->name('cards');
-        Route::view('/utilities-color', 'utilities-color')->name('utilities-color');
-        Route::view('/utilities-border', 'utilities-border')->name('utilities-border');
-        Route::view('/utilities-animation', 'utilities-animation')->name('utilities-animation');
-        Route::view('/utilities-other', 'utilities-other')->name('utilities-other');
+        Route::view('/utilities_color', 'utilities_color')->name('utilities_color');
+        Route::view('/utilities_border', 'utilities_border')->name('utilities_border');
+        Route::view('/utilities_animation', 'utilities_animation')->name('utilities_animation');
+        Route::view('/utilities_other', 'utilities_other')->name('utilities_other');
         Route::view('/404', '404')->name('404');
         Route::view('/blank', 'blank')->name('blank');
         Route::view('/charts', 'charts')->name('charts');
