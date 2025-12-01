@@ -27,6 +27,6 @@ class LoginAdminController extends Controller
 
     protected function authenticated(Request $request, $user)
     {
-        return redirect()->intended('/admin_login_form');
+        return redirect()->intended('/login.form');
     }
 }

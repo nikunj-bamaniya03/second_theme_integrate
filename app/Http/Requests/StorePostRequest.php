@@ -44,4 +44,6 @@ class StorePostRequest extends FormRequest
             'password_confirmation.same'     => 'Password confirmation must match the password.',
         ];
     }
+
+    // protected $StopOnFirstFailure = true;
 }

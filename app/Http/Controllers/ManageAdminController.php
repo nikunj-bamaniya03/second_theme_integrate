@@ -9,7 +9,7 @@ use Symfony\Component\HttpKernel\HttpCache\Store;
 
 class ManageAdminController extends Controller
 {
-    public function admin_register(StorePostRequest $StorePostRequest)
+    public function adminRegistered(StorePostRequest $StorePostRequest)
     {
         $StorePostRequest->validate([
             'first_name' => 'required|string|max:50',
@@ -27,7 +27,7 @@ class ManageAdminController extends Controller
                 'updated_at' => now()
             ]);
 
-            return redirect()->route('admin_login_form')->with('success', 'Admin registered successfully!');
+            return redirect()->route('login.form')->with('success', 'Admin registered successfully!');
         
     }
     

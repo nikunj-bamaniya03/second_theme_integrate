@@ -76,10 +76,10 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="{{ Route('forgot_password') }}">Forgot Password?</a>
+                                        <a class="small" href="{{ Route('forgotPassword') }}">Forgot Password?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="{{ Route('admin_register_form') }}">Create an Account!</a>
+                                        <a class="small" href="{{ Route('register.form') }}">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>

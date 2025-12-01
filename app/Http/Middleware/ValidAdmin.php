@@ -20,6 +20,6 @@ class ValidAdmin
             return $next($request);
             
         }
-        return redirect()->route('admin_login_form')->with('error', 'Please login as admin to access this page.');
+        return redirect()->route('login.form')->with('error', 'Please login as admin to access this page.');
     }
 }

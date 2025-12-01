@@ -36,7 +36,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user" id="admin_Register_Form" action="{{ Route('insert_admin_register') }}" method="POST">
+                            <form class="user" id="admin_Register_Form" action="{{ Route('admin_register') }}" method="POST">
                                 @csrf
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
@@ -90,10 +90,10 @@
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="{{ ('forgot_password') }}">Forgot Password?</a>
+                                <a class="small" href="{{ Route('forgotPassword') }}">Forgot Password?</a>
                             </div>
                             <div class="text-center">
-                                <a class="small" href="{{ ('admin_login_form') }}">Already have an account? Login!</a>
+                                <a class="small" href="{{ Route('login.form') }}">Already have an account? Login!</a>
                             </div>
                         </div>
                     </div>

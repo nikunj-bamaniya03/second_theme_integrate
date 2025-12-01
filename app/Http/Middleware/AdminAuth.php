@@ -18,7 +18,7 @@ class AdminAuth
     {
         // for check admin is logged in or not
         if (!Auth::guard('admin')->check()) {
-            return redirect()->route('admin_login_form');
+            return redirect()->route('login.form');
         }
         
         return $next($request);

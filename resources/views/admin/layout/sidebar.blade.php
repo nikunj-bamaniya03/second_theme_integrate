@@ -54,10 +54,10 @@
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="{{ Route('utilities_color') }}">Colors</a>
-                <a class="collapse-item" href="{{ Route('utilities_border') }}">Borders</a>
-                <a class="collapse-item" href="{{ Route('utilities_animation') }}">Animations</a>
-                <a class="collapse-item" href="{{ Route('utilities_other') }}">Other</a>
+                <a class="collapse-item" href="{{ Route('utilitiesColor') }}">Colors</a>
+                <a class="collapse-item" href="{{ Route('utilitiesBorder') }}">Borders</a>
+                <a class="collapse-item" href="{{ Route('utilitiesAnimation') }}">Animations</a>
+                <a class="collapse-item" href="{{ Route('utilitiesOther') }}">Other</a>
             </div>
         </div>
     </li>
@@ -80,9 +80,9 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Login Screens:</h6>
-                <a class="collapse-item" href="{{ Route('admin_login_form') }}">Login</a>
-                <a class="collapse-item" href="{{ Route('admin_register_form') }}">Register</a>
-                <a class="collapse-item" href="{{ Route('forgot_password') }}">Forgot Password</a>
+                <a class="collapse-item" href="{{ Route('login.form') }}">Login</a>
+                <a class="collapse-item" href="{{ Route('register.form') }}">Register</a>
+                <a class="collapse-item" href="{{ Route('forgotPassword') }}">Forgot Password</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Other Pages:</h6>
                 <a class="collapse-item" href="{{ Route('404') }}">404 Page</a>
