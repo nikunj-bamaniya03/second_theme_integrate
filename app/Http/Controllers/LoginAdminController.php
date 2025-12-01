@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginAdminController extends Controller
 {
-public function adminLoginCredentialsMatch(Request $request)
+    public function adminLoginCredentialsMatch(Request $request)
 
     {
         $credentials = $request->validate([
