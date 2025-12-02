@@ -45,7 +45,7 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user" id="admin_Login_Form" method="POST" action="{{ Route('login_match') }}">
+                                    <form class="user" id="admin_Login_Form" method="POST" action="{{ Route('login.match') }}">
                                         @csrf
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user" name="email"
@@ -76,7 +76,7 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="{{ Route('forgotPassword') }}">Forgot Password?</a>
+                                        <a class="small" href="{{ Route('forgot.password') }}">Forgot Password?</a>
                                     </div>
                                     <div class="text-center">
                                         <a class="small" href="{{ Route('register.form') }}">Create an Account!</a>
